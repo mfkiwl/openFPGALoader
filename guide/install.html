@@ -1,113 +1,38 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Installing openFPGALoader &mdash; openFPGALoader: universal utility for programming FPGA latest documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../_static/documentation_options.js?v=c6e86fd7"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../_static/js/theme.js"></script>
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Installing openFPGALoader &#8212; openFPGALoader: universal utility for programming FPGA latest documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=c6e86fd7"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Troubleshooting" href="troubleshooting.html" />
-    <link rel="prev" title="First steps with openFPGALoader" href="first-steps.html" /> 
-</head>
+    <link rel="prev" title="First steps with openFPGALoader" href="first-steps.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> openFPGALoader: universal utility for programming FPGA
-          </a>
-              <div class="version">
-                latest
-              </div>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="first-steps.html">First steps with openFPGALoader</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Installing openFPGALoader</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#linux">Linux</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#debian-ubuntu">Debian/Ubuntu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#guix">Guix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#arch-linux">Arch Linux</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#fedora">Fedora</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#from-source">From source</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#udev-rules">Udev rules</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#macos">macOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#windows">Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#common">Common</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced.html">Advanced usage of openFPGALoader</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Compatibility</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../compatibility/fpga.html">FPGAs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../compatibility/board.html">Boards</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../compatibility/cable.html">Cables</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Vendors</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../vendors/anlogic.html">Anlogic notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../vendors/colognechip.html">Cologne Chip notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../vendors/efinix.html">Efinix notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../vendors/gowin.html">Gowin notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../vendors/intel.html">Intel notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../vendors/lattice.html">Lattice notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../vendors/xilinx.html">Xilinx notes</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Development</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../todo.html">To Do</a></li>
-</ul>
+  
+  
 
-        </div>
-      </div>
-    </nav>
+  </head><body>
+  
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">openFPGALoader: universal utility for programming FPGA</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-        
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
           
-            <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Installing openFPGALoader</li>
-      <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/mfkiwl/openFPGALoader/blob/master/doc/guide/install.rst" class="fa fa-github"> Edit on GitHub</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+
+          <div class="body" role="main">
+            
   <section id="installing-openfpgaloader">
 <span id="install"></span><h1>Installing openFPGALoader<a class="headerlink" href="#installing-openfpgaloader" title="Link to this heading">¶</a></h1>
 <section id="linux">
@@ -125,6 +50,11 @@
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>guix<span class="w"> </span>install<span class="w"> </span>openfpgaloader
 </pre></div>
 </div>
+<p>To use openFPGALoader under GuixSystem without root privileges it is necessary to install the necessary udev rules. This can be done by extending <code class="docutils literal notranslate"><span class="pre">udev-service-type</span></code> in the <code class="docutils literal notranslate"><span class="pre">operating-system</span></code> configuration file with this package</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>udev-rules-service<span class="w"> </span><span class="s1">&#39;openfpgaloader openfpgaloader #:groups &#39;</span><span class="o">(</span><span class="se">\&quot;</span>plugdev<span class="se">\&quot;</span><span class="o">)</span>
+</pre></div>
+</div>
+<p>Additionally, <code class="docutils literal notranslate"><span class="pre">plugdev</span></code> group should be registered in the <code class="docutils literal notranslate"><span class="pre">supplementary-groups</span></code> field of your <code class="docutils literal notranslate"><span class="pre">user-account``declaration.</span>&#160; <span class="pre">Refer</span> <span class="pre">to</span> <span class="pre">``Base</span> <span class="pre">Services</span></code> section in the manual for examples.</p>
 </section>
 <section id="arch-linux">
 <h3>Arch Linux<a class="headerlink" href="#arch-linux" title="Link to this heading">¶</a></h3>
@@ -218,23 +148,42 @@ make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</s
 <section id="udev-rules">
 <h3>Udev rules<a class="headerlink" href="#udev-rules" title="Link to this heading">¶</a></h3>
 <p>By default, users have no access to converters.
-A rule file (<a class="reference external" href="https://github.com/trabucayre/openFPGALoader/blob/master/99-openfpgaloader.rules">99-openfpgaloader.rules</a>) for <code class="docutils literal notranslate"><span class="pre">udev</span></code> is provided at the root directory
-of this repository.
-These rules set access right and group (<code class="docutils literal notranslate"><span class="pre">plugdev</span></code>) when a converter is plugged.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>cp<span class="w"> </span><span class="m">99</span>-openfpgaloader.rules<span class="w"> </span>/etc/udev/rules.d/
+Two rule files are provided at the root directory of this repository:</p>
+<ul class="simple">
+<li><p><a class="extlink-ghsrc reference external" href="https://github.com/trabucayre/openFPGALoader/blob/master/99-openfpgaloader.rules">99-openfpgaloader.rules</a> sets the group with <code class="docutils literal notranslate"><span class="pre">GROUP=&quot;plugdev&quot;</span></code>.</p></li>
+<li><p><a class="extlink-ghsrc reference external" href="https://github.com/trabucayre/openFPGALoader/blob/master/70-openfpgaloader.rules">70-openfpgaloader.rules</a> does not set <code class="docutils literal notranslate"><span class="pre">GROUP=&quot;plugdev&quot;</span></code>.</p></li>
+</ul>
+<p>First, check if <code class="docutils literal notranslate"><span class="pre">plugdev</span></code> exists:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>grep<span class="w"> </span>-w<span class="w"> </span>plugdev<span class="w"> </span>/etc/group
+</pre></div>
+</div>
+<p>Option 1 (recommended): create system group <code class="docutils literal notranslate"><span class="pre">plugdev</span></code> (if required) and use <code class="docutils literal notranslate"><span class="pre">99-openfpgaloader.rules</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>groupadd<span class="w"> </span>--system<span class="w"> </span>plugdev<span class="w"> </span><span class="c1"># only required if plugdev is absent</span>
+sudo<span class="w"> </span>cp<span class="w"> </span><span class="m">99</span>-openfpgaloader.rules<span class="w"> </span>/etc/udev/rules.d/
 sudo<span class="w"> </span>udevadm<span class="w"> </span>control<span class="w"> </span>--reload-rules<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>udevadm<span class="w"> </span>trigger<span class="w"> </span><span class="c1"># force udev to take new rule</span>
 sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span><span class="nv">$USER</span><span class="w"> </span>-G<span class="w"> </span>plugdev<span class="w"> </span><span class="c1"># add user to plugdev group</span>
+</pre></div>
+</div>
+<p>Option 2: if <code class="docutils literal notranslate"><span class="pre">plugdev</span></code> does not exist (or you do not want to create it), use
+<code class="docutils literal notranslate"><span class="pre">70-openfpgaloader.rules</span></code> and ensure your user is in <code class="docutils literal notranslate"><span class="pre">dialout</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>cp<span class="w"> </span><span class="m">70</span>-openfpgaloader.rules<span class="w"> </span>/etc/udev/rules.d/
+sudo<span class="w"> </span>udevadm<span class="w"> </span>control<span class="w"> </span>--reload-rules<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>udevadm<span class="w"> </span>trigger<span class="w"> </span><span class="c1"># force udev to take new rule</span>
+sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span><span class="nv">$USER</span><span class="w"> </span>-G<span class="w"> </span>dialout<span class="w"> </span><span class="c1"># add user to dialout group</span>
 </pre></div>
 </div>
 <p>After that you need to unplug and replug your device.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p><code class="docutils literal notranslate"><span class="pre">usermod</span></code> is used to add <code class="docutils literal notranslate"><span class="pre">$USER</span></code> as a member of <code class="docutils literal notranslate"><span class="pre">plugdev</span></code> group.
-However this update is not taken into account immediately: it’s required to
-logout from current session and login again.
-Check, by using <code class="docutils literal notranslate"><span class="pre">id</span> <span class="pre">$USER</span></code>, if <code class="docutils literal notranslate"><span class="pre">plugdev</span></code> is mentioned after <code class="docutils literal notranslate"><span class="pre">groups=</span></code>.
-An alternate (and temporary) solution is to use <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">-</span> <span class="pre">$USER</span></code> to have
-your user seen as a member of <code class="docutils literal notranslate"><span class="pre">plugdev</span></code> group (works only for the current terminal).</p>
+<p><code class="docutils literal notranslate"><span class="pre">usermod</span></code> is used to add <code class="docutils literal notranslate"><span class="pre">$USER</span></code> as a member of <code class="docutils literal notranslate"><span class="pre">plugdev</span></code>, or
+<code class="docutils literal notranslate"><span class="pre">dialout</span></code> group. However this update is not taken into account immediately:
+it’s required to logout from current session and login again.
+Check, by using <code class="docutils literal notranslate"><span class="pre">id</span> <span class="pre">$USER</span></code>, if <code class="docutils literal notranslate"><span class="pre">plugdev</span></code>, ord <code class="docutils literal notranslate"><span class="pre">dialout</span></code> is mentioned after
+<code class="docutils literal notranslate"><span class="pre">groups=</span></code>. An alternate (and temporary) solution is to use <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">-</span> <span class="pre">$USER</span></code>
+to have your user seen as a member of the expected group (works only for the
+current terminal).</p>
+<p>If the converter still cannot be opened, check access rights on the device
+node (for example <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-l</span> <span class="pre">/dev/ttyUSB*</span> <span class="pre">/dev/ttyACM*</span></code>) and verify
+the associated group (<code class="docutils literal notranslate"><span class="pre">plugdev</span></code> or <code class="docutils literal notranslate"><span class="pre">dialout</span></code>).</p>
 </div>
 </section>
 </section>
@@ -258,6 +207,82 @@ make<span class="w"> </span>-j
 </section>
 <section id="windows">
 <h2>Windows<a class="headerlink" href="#windows" title="Link to this heading">¶</a></h2>
+<section id="msys2-native-build">
+<h3>MSYS2 (Native Build)<a class="headerlink" href="#msys2-native-build" title="Link to this heading">¶</a></h3>
+<p>openFPGALoader can be installed via MSYS2:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pacman<span class="w"> </span>-S<span class="w"> </span>mingw-w64-ucrt-x86_64-openFPGALoader
+</pre></div>
+</div>
+</section>
+<section id="cross-compilation-from-linux">
+<h3>Cross-compilation from Linux<a class="headerlink" href="#cross-compilation-from-linux" title="Link to this heading">¶</a></h3>
+<p>openFPGALoader can be cross-compiled for Windows from Linux using MinGW-w64
+toolchains (GCC or Clang). The build system will automatically download and
+build the required dependencies (libusb, libftdi).</p>
+<p><strong>Prerequisites (Debian/Ubuntu):</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>mingw-w64<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>libz-mingw-w64-dev<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>clang<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>lld<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>cmake<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>pkg-config<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>p7zip-full
+</pre></div>
+</div>
+<p><strong>Prerequisites (Fedora/RHEL/Rocky):</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>mingw64-gcc<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>mingw64-gcc-c++<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>mingw64-zlib<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>mingw64-zlib-static<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>clang<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>lld<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>cmake<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>p7zip<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>p7zip-plugins
+</pre></div>
+</div>
+<p><strong>Build (shared steps):</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/trabucayre/openFPGALoader
+<span class="nb">cd</span><span class="w"> </span>openFPGALoader
+mkdir<span class="w"> </span>build-win64
+<span class="nb">cd</span><span class="w"> </span>build-win64
+</pre></div>
+</div>
+<p><strong>Configure + build with GCC (MinGW-w64):</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>-DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../cmake/Toolchain-x86_64-w64-mingw32.cmake<span class="w"> </span>..
+cmake<span class="w"> </span>--build<span class="w"> </span>.<span class="w"> </span>--parallel
+</pre></div>
+</div>
+<p><strong>Configure + build with Clang (MinGW-w64 target):</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>-DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../cmake/Toolchain-x86_64-w64-mingw32-clang.cmake<span class="w"> </span>..
+cmake<span class="w"> </span>--build<span class="w"> </span>.<span class="w"> </span>--parallel
+</pre></div>
+</div>
+<p>The resulting <code class="docutils literal notranslate"><span class="pre">openFPGALoader.exe</span></code> will be a statically-linked executable
+that only depends on standard Windows system DLLs (KERNEL32, msvcrt, WS2_32).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">zlib</span></code> for the Windows target is required. Configuration fails if it is
+missing (install <code class="docutils literal notranslate"><span class="pre">libz-mingw-w64-dev</span></code> on Debian/Ubuntu or
+<code class="docutils literal notranslate"><span class="pre">mingw64-zlib</span></code> on Fedora/RHEL/Rocky).
+<code class="docutils literal notranslate"><span class="pre">zlib</span></code> is linked statically by default on Windows builds
+(<code class="docutils literal notranslate"><span class="pre">-DWINDOWS_STATIC_ZLIB=ON</span></code>).</p>
+</div>
+<p><strong>Optional: Strip debug symbols to reduce size:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>x86_64-w64-mingw32-strip<span class="w"> </span>openFPGALoader.exe
+<span class="c1"># or</span>
+llvm-strip<span class="w"> </span>openFPGALoader.exe
+</pre></div>
+</div>
+<p><strong>Cross-compilation options:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-DCROSS_COMPILE_DEPS=OFF</span></code> - Disable automatic dependency download (use system libraries)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-DENABLE_CMSISDAP=ON</span></code> - Enable CMSIS-DAP support (requires manually providing hidapi)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-DWINDOWS_STATIC_ZLIB=OFF</span></code> - Allow dynamic zlib linkage (produces <code class="docutils literal notranslate"><span class="pre">zlib1.dll</span></code> runtime dependency)</p></li>
+</ul>
+</section>
 </section>
 <section id="common">
 <h2>Common<a class="headerlink" href="#common" title="Link to this heading">¶</a></h2>
@@ -267,36 +292,194 @@ make<span class="w"> </span>-j
 </pre></div>
 </div>
 <p>default: <code class="docutils literal notranslate"><span class="pre">/opt/Xilinx/14.7</span></code>.</p>
+<section id="disabling-enabling-cable-or-vendor-drivers">
+<h3>Disabling/Enabling Cable or Vendor Drivers<a class="headerlink" href="#disabling-enabling-cable-or-vendor-drivers" title="Link to this heading">¶</a></h3>
+<p>With the default <code class="docutils literal notranslate"><span class="pre">cmake</span> <span class="pre">..</span></code> configuration, openFPGALoader enables
+<code class="docutils literal notranslate"><span class="pre">ENABLE_CABLE_ALL=ON</span></code> and <code class="docutils literal notranslate"><span class="pre">ENABLE_VENDORS_ALL=ON</span></code>. This means all cable
+and vendor drivers are enabled by default, then filtered only by OS
+capabilities and available dependencies.</p>
+<p>To reduce binary size, speed up the build, or keep support limited to selected
+cables/vendors, you can explicitly enable or disable options.</p>
+<p>These commands are equivalent:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>-DENABLE_CABLE_ALL<span class="o">=</span>ON<span class="w"> </span>-DENABLE_VENDORS_ALL<span class="o">=</span>ON<span class="w"> </span>..
+<span class="c1"># and</span>
+cmake<span class="w"> </span>..<span class="w">  </span><span class="c1"># Implicit default values</span>
+</pre></div>
+</div>
+<p>To disable all cable and vendor support:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>-DENABLE_CABLE_ALL<span class="o">=</span>OFF<span class="w"> </span>-DENABLE_VENDORS_ALL<span class="o">=</span>OFF<span class="w"> </span>..
+</pre></div>
+</div>
+<p>This produces an <strong>openFPGALoader</strong> binary with no cable/vendor support.
+Then re-enable only what you need by adding one or more options below.</p>
+<p>Each item in the following lists is a CMake option name. Use them with
+<code class="docutils literal notranslate"><span class="pre">-D&lt;OPTION&gt;=ON</span></code> to enable or <code class="docutils literal notranslate"><span class="pre">-D&lt;OPTION&gt;=OFF</span></code> to disable.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The default value for each option is provided by <code class="docutils literal notranslate"><span class="pre">ENABLE_CABLE_ALL</span></code> and
+<code class="docutils literal notranslate"><span class="pre">ENABLE_VENDORS_ALL</span></code>.</p>
+</div>
+<p>Example (enable FTDI-based cables and Xilinx devices only):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DENABLE_CABLE_ALL<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DENABLE_VENDORS_ALL<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DENABLE_FTDI_BASED_CABLE<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DENABLE_XILINX_SUPPORT<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>..
+</pre></div>
+</div>
+<p><strong>Cable options</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_USB_SCAN</span></code>: Enable USB cable discovery/scanning support.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_ANLOGIC_CABLE</span></code>: Enable Anlogic cable support (requires libUSB).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_CH347</span></code>: Enable CH347 cable support (requires libUSB).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_CMSISDAP</span></code>: Enable CMSIS-DAP interface support (requires hidapi).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_DIRTYJTAG</span></code>: Enable DirtyJTAG cable support (requires libUSB).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_ESP_USB</span></code>: Enable ESP32-S3 USB-JTAG cable support (requires libUSB).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_JLINK</span></code>: Enable J-Link cable support (requires libUSB).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_DFU</span></code>: Enable DFU-based cable support (requires libUSB).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_FTDI_BASED_CABLE</span></code>: Enable FTDI-based cable drivers (requires libftdi).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_GOWIN_GWU2X</span></code>: Enable Gowin GWU2X interface support.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_SVF_JTAG</span></code>: Enable SVF JTAG playback support.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_USB_BLASTERI</span></code>: Enable Altera USB-Blaster I support.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_USB_BLASTERII</span></code>: Enable Altera USB-Blaster II support.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_LIBGPIOD</span></code>: Enable libgpiod bitbang driver support (Linux only).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_REMOTEBITBANG</span></code>: Enable remote-bitbang driver support.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_XILINX_VIRTUAL_CABLE_CLIENT</span></code>: Enable Xilinx Virtual Cable (XVC) client support.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_XILINX_VIRTUAL_CABLE_SERVER</span></code>: Enable Xilinx Virtual Cable (XVC) server support.</p></li>
+</ul>
+<p><strong>Vendor options</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_ALTERA_SUPPORT</span></code>: Enable Altera/Intel device family support.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_ANLOGIC_SUPPORT</span></code>: Enable Anlogic device family support.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_COLOGNECHIP_SUPPORT</span></code>: Enable Cologne Chip device family support (requires libftdi).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_EFINIX_SUPPORT</span></code>: Enable Efinix device family support (requires libftdi).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_GOWIN_SUPPORT</span></code>: Enable Gowin device family support.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_ICE40_SUPPORT</span></code>: Enable Lattice iCE40 device family support (requires libftdi).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_LATTICE_SUPPORT</span></code>: Enable Lattice device family support.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_LATTICESSPI_SUPPORT</span></code>: Enable Lattice SSPI support (requires libftdi).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ENABLE_XILINX_SUPPORT</span></code>: Enable Xilinx device family support.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>SPI support is hardcoded to FTDI. When FTDI support is disabled, some
+vendor drivers are also disabled (<em>iCE40</em>, <em>Cologne Chip</em>, <em>Efinix</em>, and
+<em>Lattice SSPI</em>).</p>
+</div>
+</section>
 </section>
 </section>
 
 
-           </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="first-steps.html" class="btn btn-neutral float-left" title="First steps with openFPGALoader" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="troubleshooting.html" class="btn btn-neutral float-right" title="Troubleshooting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2019-2022, Gwenhael Goavec-Merou and contributors.</p>
-  </div>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/buildthedocs/sphinx.theme">theme</a>
-    provided by <a href="https://buildthedocs.github.io">Build the Docs</a>.
-   
-
-</footer>
+          
         </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">openFPGALoader: universal utility for programming FPGA</a></h1>
 
-</body>
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="first-steps.html">First steps with openFPGALoader</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installing openFPGALoader</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#linux">Linux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#debian-ubuntu">Debian/Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#guix">Guix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#arch-linux">Arch Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fedora">Fedora</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#from-source">From source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#udev-rules">Udev rules</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#macos">macOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#windows">Windows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#msys2-native-build">MSYS2 (Native Build)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cross-compilation-from-linux">Cross-compilation from Linux</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#common">Common</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#disabling-enabling-cable-or-vendor-drivers">Disabling/Enabling Cable or Vendor Drivers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced.html">Advanced usage of openFPGALoader</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Compatibility</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../compatibility/fpga.html">FPGAs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compatibility/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compatibility/cable.html">Cables</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Vendors</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../vendors/anlogic.html">Anlogic notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendors/colognechip.html">Cologne Chip notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendors/efinix.html">Efinix notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendors/gowin.html">Gowin notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendors/intel.html">Intel notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendors/lattice.html">Lattice notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendors/xilinx.html">Xilinx notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../todo.html">To Do</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="first-steps.html" title="previous chapter">First steps with openFPGALoader</a></li>
+      <li>Next: <a href="troubleshooting.html" title="next chapter">Troubleshooting</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2019-2022, Gwenhael Goavec-Merou and contributors.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.1.0</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/guide/install.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
 </html>
